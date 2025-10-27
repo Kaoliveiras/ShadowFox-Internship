@@ -1,0 +1,66 @@
+Task one 
+Karina de Oliveira Silva 
+1. I installed Nmap on my system. 
+2. I opened the Command Prompt (CMD). 
+3. I entered the following command: nmap -Pn -sS -p- testphp.vulnweb.com 
+4. After a few minutes of scanning, I obtained the following result: 
+Microsoft Windows [Version 10.0.19045.6093] 
+(c) Microsoft Corporation. All rights reserved. 
+C:\Users\User>nmap -Pn -sS -p- testphp.vulnweb.com 
+Starting Nmap 7.97 ( https://nmap.org ) at 2025-07-31 01:17 -0300 
+Stats: 0:00:00 elapsed; 0 hosts completed (0 up), 0 undergoing Host Discovery 
+Parallel DNS resolution of 1 host. Timing: About 0.00% done 
+Stats: 0:00:23 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan 
+SYN Stealth Scan Timing: About 1.08% done; ETC: 01:44 (0:27:28 remaining) 
+Stats: 0:00:26 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan 
+SYN Stealth Scan Timing: About 1.27% done; ETC: 01:44 (0:27:07 remaining) 
+Stats: 0:00:31 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan 
+SYN Stealth Scan Timing: About 1.49% done; ETC: 01:46 (0:28:36 remaining) 
+Stats: 0:00:37 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan 
+SYN Stealth Scan Timing: About 1.73% done; ETC: 01:47 (0:30:19 remaining) 
+Stats: 0:00:44 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan 
+SYN Stealth Scan Timing: About 1.88% done; ETC: 01:52 (0:34:44 remaining) 
+Stats: 0:01:14 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan 
+SYN Stealth Scan Timing: About 2.38% done; ETC: 02:05 (0:47:05 remaining) 
+Stats: 0:01:15 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan 
+SYN Stealth Scan Timing: About 2.43% done; ETC: 02:05 (0:46:49 remaining) 
+Stats: 0:01:16 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan 
+SYN Stealth Scan Timing: About 2.48% done; ETC: 02:05 (0:47:13 remaining) 
+Stats: 0:01:18 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan 
+SYN Stealth Scan Timing: About 2.53% done; ETC: 02:05 (0:46:54 remaining) 
+Stats: 0:01:46 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan 
+SYN Stealth Scan Timing: About 5.02% done; ETC: 01:50 (0:31:50 remaining) 
+Stats: 0:02:38 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan 
+SYN Stealth Scan Timing: About 10.08% done; ETC: 01:42 (0:22:45 remaining) 
+Stats: 0:05:53 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan 
+SYN Stealth Scan Timing: About 45.11% done; ETC: 01:29 (0:07:03 remaining) 
+Stats: 0:08:22 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan 
+SYN Stealth Scan Timing: About 61.57% done; ETC: 01:30 (0:05:10 remaining) 
+Stats: 0:08:25 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan 
+SYN Stealth Scan Timing: About 61.86% done; ETC: 01:30 (0:05:08 remaining) 
+Stats: 0:09:50 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan 
+SYN Stealth Scan Timing: About 78.86% done; ETC: 01:29 (0:02:37 remaining) 
+Nmap scan report for testphp.vulnweb.com (44.228.249.3) 
+Host is up (0.41s latency). 
+rDNS record for 44.228.249.3: ec2-44-228-249-3.us-west-2.compute.amazonaws.com 
+Not shown: 65534 filtered tcp ports (no-response) 
+PORT   STATE SERVICE 
+80/tcp open  http 
+Nmap done: 1 IP address (1 host up) scanned in 840.21 seconds 
+C:\Users\User> 
+5 result: 80/tcp open  http 
+Task 2 
+Karina de Oliveira Silva 
+I used the Pentest Tools website to scan and find directories and files. 
+I found 26 items. 
+Task 3 
+Karina de Oliveira Silva 
+1 I installed Wireshark. 
+2 I selected the Wi-Fi option 
+3 I opened the browser with the site: http://testphp.vulnweb.com/login.php 
+4 After signing up, I went back to Wireshark and used the filter (http). 
+5 
+ 
+ 
+I opened it with HTTP stream and the result was: it displays the username and 
+password without any kind of protection.
